@@ -1,0 +1,181 @@
+body {
+    font-family:monospace;
+    background-color:rgb(255, 136, 0);
+}
+#cookie{
+    margin-top: 200px;
+   text-align:center;
+    background-color:rgb(231, 15, 184);
+    height:400px;
+    width:400px;
+    border-radius:100%;
+    margin : auto;}
+
+     {
+        text-align:center;
+        border:5px solid;
+        border-radius:10px;
+        position:absolute;
+        left:50px;
+        top:20px;
+        background-color:grey;
+        width:389px;
+        height:78px;
+        margin-top: 100px;
+        margin-left : 0;
+
+
+     }
+    #informations {
+        display: flex;
+
+    }
+    #bonus {
+        display : flex;
+    }
+    
+    /*
+ * Copyright (c) 2012 Thibaut Courouble
+ * http://www.cssflow.com
+ *
+ * Licensed under the MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+ *
+ * View the Sass/SCSS source at:
+ * http://www.cssflow.com/snippets/multi-colored-push-buttons/demo/scss
+ *
+ * Original PSD by Marian Mraz: http://goo.gl/9Il5d
+ */
+
+@import "http://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css";
+
+body {
+  font: 13px/20px "Lucida Grande", Tahoma, Verdana, sans-serif;
+  color: #404040;
+  background: black;
+}
+
+.container {
+  zoom: 1;
+}
+
+.container:before, .container:after {
+  content: '';
+  display: table;
+}
+
+.container:after {
+  clear: both;
+}
+
+.column {
+  position: relative;
+  z-index: 1;
+  float: left;
+  width: 25%;
+  padding: 30px 0;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.column .button + .button {
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.button {
+  display: inline-block;
+  position: relative;
+  height: 33px;
+  line-height: 33px;
+  padding: 0 15px;
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
+  border: 2px solid;
+  border-radius: 7px;
+  outline: 0;
+  -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.25);
+}
+
+.button:before, .button:after {
+  content: '';
+  position: absolute;
+}
+
+.button:before {
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+  z-index: -1;
+  border-radius: 9px;
+}
+
+.button:after {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 0;
+  border-radius: 7px;
+}
+
+.button.alt {
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+.button.alt:before {
+  display: none;
+}
+
+
+.button.pink {
+  background: #b62b89;
+  border-color: #801e61 #7c1d5e #63184b;
+  background-image: -webkit-linear-gradient(top, #d03998 0%, #cb308c 50%, #b62b89 50%, #9c1c7b 100%);
+  background-image: -moz-linear-gradient(top, #d03998 0%, #cb308c 50%, #b62b89 50%, #9c1c7b 100%);
+  background-image: -o-linear-gradient(top, #d03998 0%, #cb308c 50%, #b62b89 50%, #9c1c7b 100%);
+  background-image: linear-gradient(to bottom, #d03998 0%, #cb308c 50%, #b62b89 50%, #9c1c7b 100%);
+}
+
+.button.pink:before {
+  background: #d83ca6;
+  background-image: -webkit-linear-gradient(top, #9c2174, #df4aae);
+  background-image: -moz-linear-gradient(top, #9c2174, #df4aae);
+  background-image: -o-linear-gradient(top, #9c2174, #df4aae);
+  background-image: linear-gradient(to bottom, #9c2174, #df4aae);
+}
+
+.button.pink:active {
+  background: #cb3093;
+  background-image: -webkit-linear-gradient(top, #941a77 0%, #c22e8d 60%, #cb3093 100%);
+  background-image: -moz-linear-gradient(top, #941a77 0%, #c22e8d 60%, #cb3093 100%);
+  background-image: -o-linear-gradient(top, #941a77 0%, #c22e8d 60%, #cb3093 100%);
+  background-image: linear-gradient(to bottom, #941a77 0%, #c22e8d 60%, #cb3093 100%);
+}
+
+.button.pink:active:after {
+  border-color: #cb3093;
+}
+
+
+
+.lt-ie9 .button:before {
+  display: none;
+}
